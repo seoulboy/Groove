@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>featured</string>
+		<key>playlists</key>
+		<array>
+			<dict>
+				<key>theme</key>
+				<string>#Mood</string>
+				<key>subtitle</key>
+				<string>사방이 숲인 곳에서 캠핑하는 상상</string>
+				<key>title</key>
+				<string>한적한 캠핑장에서</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>새 앨범</string>
+				<key>subtitle</key>
+				<string>이날치: 여보나리</string>
+				<key>title</key>
+				<string>조선 힙스터식 수궁가</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>이 노래 어때?</string>
+				<key>subtitle</key>
+				<string>오늘은 내 마음에 솔직하고 싶어요</string>
+				<key>title</key>
+				<string>끈적끈적</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>#mood</string>
+				<key>subtitle</key>
+				<string>화요일, 기분좋게 리프레쉬</string>
+				<key>title</key>
+				<string>단 하루를 떠나도 특별하게</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>급상승 뮤비🎬</string>
+				<key>subtitle</key>
+				<string>미미 (MIMI)</string>
+				<key>title</key>
+				<string>유라(youra)</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>오늘 뭐 듣지?</string>
+				<key>subtitle</key>
+				<string>욕조 안에 스르르르</string>
+				<key>title</key>
+				<string>따듯한 욕조 안에서 멍때리기</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>새 앨범</string>
+				<key>subtitle</key>
+				<string>새소년: 자유</string>
+				<key>title</key>
+				<string>한 걸음 더 진보해내는 새소년의 자유와 도약</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>지붕뚫고 급상승 🚀</string>
+				<key>subtitle</key>
+				<string>급상승 차트 1위</string>
+				<key>title</key>
+				<string>젝스키스 : 뒤돌아보지 말아요</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>핫이슈</string>
+				<key>subtitle</key>
+				<string>싱어게인 경연곡 모아듣기</string>
+				<key>title</key>
+				<string>&apos;이승윤&apos;의 우승으로 끝난 첫 시즌의 모든 경연곡!</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>핫이슈</string>
+				<key>subtitle</key>
+				<string>지소울, 새 둥지 찾아</string>
+				<key>title</key>
+				<string>워너뮤직코리아·굿프로젝트와 제작지원 계약</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>요즘 트렌드⭐️</string>
+				<key>subtitle</key>
+				<string>이주의 POP NOW</string>
+				<key>title</key>
+				<string>Pink Sweat$의 신보와 함께하는 POP 트렌드</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>Playlist 🎧</string>
+				<key>subtitle</key>
+				<string>청춘에 관하여</string>
+				<key>title</key>
+				<string>내가 지금 가는 이 길이 어디로 가는지</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>#Mood</string>
+				<key>subtitle</key>
+				<string>습기로운 집콕생활</string>
+				<key>title</key>
+				<string>난 집에 있어도 하나도 심심하지 않아</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>magazine 📖</string>
+				<key>subtitle</key>
+				<string>이주의 디깅 #95</string>
+				<key>title</key>
+				<string>Colde(콜드)</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>스테이션</string>
+				<key>subtitle</key>
+				<string>누구나 하나씩은</string>
+				<key>title</key>
+				<string>장르별 스테이션: 슬픈 발라드</string>
+			</dict>
+			<dict>
+				<key>theme</key>
+				<string>#Mood</string>
+				<key>subtitle</key>
+				<string>분위기 잡고 그루브 타고</string>
+				<key>title</key>
+				<string>자연스럽게 입가에 미소가 한 웅큼</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
