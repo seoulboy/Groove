@@ -10,7 +10,7 @@ import UIKit
 class FeaturedPlaylistCell: UICollectionViewCell {
   static let reuseIdentifier = String(describing: FeaturedPlaylistCell.self)
   @IBOutlet weak var themeLabel: UILabel!
-  @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var subtitleLabel: UILabel!
-  @IBOutlet weak var thumbnailView: UIView!
+  @IBOutlet weak var title: UILabel!
+  @IBOutlet weak var subtitle: UILabel!
+  @IBOutlet weak var thumbnail: UIView!
 }

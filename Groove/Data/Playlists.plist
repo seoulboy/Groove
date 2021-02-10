@@ -137,5 +137,267 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>Mixtapes For you</string>
+		<key>playlists</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>최애 믹스테잎</string>
+				<key>subtitle</key>
+				<string>keshi, Ruel, slchld, PRETTYMUCH, nosy beats, Mullally, Bassette, MAC MILLER</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>잔잔 믹스테잎</string>
+				<key>subtitle</key>
+				<string>Johny Luv, nawhij, Dlj, softy, Dominant, eaup, niquo, Elijah Lee, Psalm Trees, nvtrme</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>두둠칫 믹스테잎</string>
+				<key>subtitle</key>
+				<string>Troye Sivan, PRETTYMUCH, why Don&apos;t We, Emotional Oranges, Channel Tres, Leon, AJ Mitchell</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>팝 믹스테잎</string>
+				<key>subtitle</key>
+				<string>Halsey, Sasha Sloan, Mittens, Mae Muller, MAX, Jeff Bernet, Sabrina Claudio</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>힙합 믹스테잎 1</string>
+				<key>subtitle</key>
+				<string>Jazzinuf, Hakaisu, Arbour, Luv.ly, Flowerhead, Elijah Who, glasear</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>힙합 믹스테잎 2</string>
+				<key>subtitle</key>
+				<string>Frad, Ahntow, nawhij, softy, Frad, Hayne, Issac. 미호, Fisherman, dnss, younghotstuff</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>알앤비 믹스테잎 1</string>
+				<key>subtitle</key>
+				<string>John Legend, Monsune, Ella Mai, Jeff Bernat, Joji, Khalid, Flw Chyld, James Tilman</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>알앤비 믹스테잎 2</string>
+				<key>subtitle</key>
+				<string>정진우, Rad Muesum, Jimmy Brown, 수지, THAMA, 프라이머리, 오혁, POLO</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>첨듣 믹스테잎</string>
+				<key>subtitle</key>
+				<string>chief., byvinyl, Surfaces, RdBeats, Wun Two, kevatta, Toonorth, dryhope, Bazzi</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>새노래 믹스테잎</string>
+				<key>subtitle</key>
+				<string>카더가든, 서엑터, 뎁트, younghotstuff, 최종원, 장한나, 션케이, Kid Wine, 김은비(EB), Austn</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Favorite Playlists</string>
+		<key>playlists</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>단전에서 차오르는 자신감</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>트랩홀릭</string>
+				<key>subtitle</key>
+				<string>VIBE 힙합</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>오늘의 발라드</string>
+				<key>subtitle</key>
+				<string>VIBE 발라드</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>VIBE AND CHILL</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Work/Study Lo-fi</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>지금 잠수 중</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Mac Miller 대표곡</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>윤지영 대표곡</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Playlists You May Like</string>
+		<key>playlists</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>두둠칫 HP 회복을 시전합니다</string>
+				<key>subtitle</key>
+				<string>하양님의 바이브</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>POP NOW</string>
+				<key>subtitle</key>
+				<string>VIBE 트렌드</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>두둠칫 알앤비</string>
+				<key>subtitle</key>
+				<string>VIBE 국내 알앤비/소울</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>DOPE!</string>
+				<key>subtitle</key>
+				<string>VIBE 트렌드</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>편안한 멜로딕 팝</string>
+				<key>subtitle</key>
+				<string>VIBE Pop</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Emotional Oranges 대표곡</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Flexin&apos;</string>
+				<key>subtitle</key>
+				<string>VIBE 국내 힙합</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>주목할 외힙 루키</string>
+				<key>subtitle</key>
+				<string>VIBE 해외 힙합</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>추억의 팝 다시 듣기</string>
+				<key>subtitle</key>
+				<string>VIBE Pop</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>칠아웃 국내 힙합</string>
+				<key>subtitle</key>
+				<string>VIBE 국내 힙합</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Pink Sweat$ 대표곡</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>DJ Station</string>
+		<key>playlists</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>멍때릴때</string>
+				<key>subtitle</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>subtitle</key>
+				<string></string>
+				<key>title</key>
+				<string>지금인기</string>
+			</dict>
+			<dict>
+				<key>subtitle</key>
+				<string></string>
+				<key>title</key>
+				<string>힙터질때</string>
+			</dict>
+			<dict>
+				<key>subtitle</key>
+				<string></string>
+				<key>title</key>
+				<string>신났을때</string>
+			</dict>
+			<dict>
+				<key>subtitle</key>
+				<string></string>
+				<key>title</key>
+				<string>우울할때</string>
+			</dict>
+			<dict>
+				<key>subtitle</key>
+				<string></string>
+				<key>title</key>
+				<string>사랑할때</string>
+			</dict>
+			<dict>
+				<key>subtitle</key>
+				<string></string>
+				<key>title</key>
+				<string>사랑했을때</string>
+			</dict>
+			<dict>
+				<key>subtitle</key>
+				<string></string>
+				<key>title</key>
+				<string>집중할때</string>
+			</dict>
+			<dict>
+				<key>subtitle</key>
+				<string></string>
+				<key>title</key>
+				<string>운동할때</string>
+			</dict>
+			<dict>
+				<key>subtitle</key>
+				<string></string>
+				<key>title</key>
+				<string>휴식할때</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>

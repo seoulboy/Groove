@@ -22,20 +22,20 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="I9s-sk-9e3">
                                     <size key="itemSize" width="403" height="253"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeaturedPlaylistCell" id="bys-fH-ceM" customClass="FeaturedPlaylistCell" customModule="Groove" customModuleProvider="target">
-                                        <rect key="frame" x="5.5" y="0.0" width="403" height="253"/>
+                                        <rect key="frame" x="5.5" y="50" width="403" height="253"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5mv-Bt-aOJ">
                                             <rect key="frame" x="0.0" y="0.0" width="403" height="253"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYh-w8-aZq" userLabel="themeLabel">
-                                                    <rect key="frame" x="0.0" y="0.0" width="54" height="21"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="403" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" systemColor="systemRedColor"/>
                                                     <nil key="highlightedColor"/>
@@ -58,6 +58,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="MYh-w8-aZq" secondAttribute="trailing" id="0nU-Eh-Pbn"/>
                                                 <constraint firstItem="ym0-2y-aNV" firstAttribute="top" secondItem="MYh-w8-aZq" secondAttribute="bottom" constant="7" id="CKG-lJ-S3b"/>
                                                 <constraint firstItem="uso-RW-tfE" firstAttribute="top" secondItem="ym0-2y-aNV" secondAttribute="bottom" constant="9" id="IXH-tt-fmt"/>
                                                 <constraint firstItem="ym0-2y-aNV" firstAttribute="top" secondItem="5mv-Bt-aOJ" secondAttribute="top" constant="28" id="Kbg-Pi-mtp"/>
@@ -77,13 +78,70 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="403" height="253"/>
                                         <connections>
-                                            <outlet property="subtitleLabel" destination="cfJ-hU-SMy" id="Xfc-u1-tom"/>
+                                            <outlet property="subtitle" destination="cfJ-hU-SMy" id="Xfc-u1-tom"/>
                                             <outlet property="themeLabel" destination="MYh-w8-aZq" id="nhk-Wg-2z8"/>
-                                            <outlet property="thumbnailView" destination="ym0-2y-aNV" id="085-bh-hxZ"/>
-                                            <outlet property="titleLabel" destination="uso-RW-tfE" id="XPW-7h-8tx"/>
+                                            <outlet property="thumbnail" destination="ym0-2y-aNV" id="085-bh-hxZ"/>
+                                            <outlet property="title" destination="uso-RW-tfE" id="XPW-7h-8tx"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CommonPlaylistCell" id="Cp1-qc-7nN" customClass="CommonPlaylistCell" customModule="Groove" customModuleProvider="target">
+                                        <rect key="frame" x="115" y="313" width="184" height="244"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XLc-Z2-Lql">
+                                            <rect key="frame" x="0.0" y="0.0" width="184" height="244"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eL7-Jy-GgS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="184" height="254"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekA-wN-2ZD" userLabel="thumbnail">
+                                                            <rect key="frame" x="0.0" y="0.0" width="184" height="184"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="ekA-wN-2ZD" secondAttribute="height" multiplier="1:1" id="iHO-hj-j3z"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="최애 믹스테잎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aG-Rg-E67" userLabel="title">
+                                                            <rect key="frame" x="0.0" y="189" width="184" height="19.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keshi, Ruel, slchld, PRETTYMUCH, nosy beats, Mullally, Bassette" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzr-sA-Ma0" userLabel="subtitle">
+                                                            <rect key="frame" x="0.0" y="213.5" width="184" height="40.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                            <color key="textColor" systemColor="systemGray2Color"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="4aG-Rg-E67" secondAttribute="trailing" id="9bx-tx-wmu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Kzr-sA-Ma0" secondAttribute="trailing" id="HfO-wO-Rvl"/>
+                                                        <constraint firstItem="4aG-Rg-E67" firstAttribute="leading" secondItem="eL7-Jy-GgS" secondAttribute="leading" id="RNH-iZ-bzf"/>
+                                                        <constraint firstItem="Kzr-sA-Ma0" firstAttribute="leading" secondItem="eL7-Jy-GgS" secondAttribute="leading" id="aCM-IS-d28"/>
+                                                        <constraint firstItem="ekA-wN-2ZD" firstAttribute="leading" secondItem="eL7-Jy-GgS" secondAttribute="leading" id="jLa-gZ-u7p"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ekA-wN-2ZD" secondAttribute="trailing" id="tow-i8-mKH"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eL7-Jy-GgS" firstAttribute="leading" secondItem="XLc-Z2-Lql" secondAttribute="leading" id="iEC-Ty-FbG"/>
+                                                <constraint firstAttribute="trailing" secondItem="eL7-Jy-GgS" secondAttribute="trailing" id="nOz-K0-8zV"/>
+                                                <constraint firstItem="eL7-Jy-GgS" firstAttribute="top" secondItem="XLc-Z2-Lql" secondAttribute="top" id="wdj-zO-1vp"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="184" height="244"/>
+                                        <connections>
+                                            <outlet property="subtitle" destination="Kzr-sA-Ma0" id="CfP-5X-0AE"/>
+                                            <outlet property="thumbnail" destination="ekA-wN-2ZD" id="LfM-La-cIx"/>
+                                            <outlet property="title" destination="4aG-Rg-E67" id="Gbi-qz-Heh"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Qh8-NR-JIy">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

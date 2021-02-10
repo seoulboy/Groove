@@ -16,12 +16,18 @@ class DataSource {
   
   private init() {
     guard let url = Bundle.main.url(forResource: "Playlists", withExtension: "plist"),
-          let data = try? Data(contentsOf: url),
-          let playlists =  try? decoder.decode([PlaylistCollection].self, from: data) else {
+          let data = try? Data(contentsOf: url) else {
       self.playlists = []
       return
     }
-    
-    self.playlists = playlists
+    print(data)
+    do {
+      let playlists = try decoder.decode([PlaylistCollection].self, from: data)
+      self.playlists = playlists
+      return
+    } catch {
+      print(error)
+    }
+    self.playlists = []
   }
 }

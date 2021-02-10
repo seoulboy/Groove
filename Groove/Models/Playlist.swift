@@ -8,9 +8,9 @@
 import Foundation
 
 class Playlist: Decodable {
-  let theme: String
+  let theme: String?
   let title: String
-  let subtitle: String
+  let subtitle: String?
   let identifier = UUID().uuidString
 }
 
