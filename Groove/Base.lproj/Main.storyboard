@@ -138,9 +138,25 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Qh8-NR-JIy">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="PlaylistHeaderView" id="Qh8-NR-JIy" customClass="PlaylistHeaderView" customModule="Groove" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mixtapes For You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMw-VJ-dGW" userLabel="header">
+                                            <rect key="frame" x="8" y="13" width="398" height="24"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="mMw-VJ-dGW" secondAttribute="trailing" id="8de-Pp-iIc"/>
+                                        <constraint firstItem="mMw-VJ-dGW" firstAttribute="centerY" secondItem="Qh8-NR-JIy" secondAttribute="centerY" id="D0q-05-Aha"/>
+                                        <constraint firstItem="mMw-VJ-dGW" firstAttribute="leading" secondItem="Qh8-NR-JIy" secondAttribute="leadingMargin" id="cfr-SK-OdS"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="header" destination="mMw-VJ-dGW" id="6Qz-3v-w7M"/>
+                                    </connections>
                                 </collectionReusableView>
                             </collectionView>
                         </subviews>

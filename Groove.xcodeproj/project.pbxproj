@@ -13,6 +13,7 @@
 		E4339E6025CD75B900340713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4339E5E25CD75B900340713 /* Main.storyboard */; };
 		E4339E6225CD75BA00340713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4339E6125CD75BA00340713 /* Assets.xcassets */; };
 		E4339E6525CD75BA00340713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4339E6325CD75BA00340713 /* LaunchScreen.storyboard */; };
+		E49D19C825D3D6180023CC0C /* PlaylistHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D19C725D3D6180023CC0C /* PlaylistHeaderView.swift */; };
 		E4E82E6425D2D5A300CBC55A /* FeaturedPlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E82E6325D2D5A300CBC55A /* FeaturedPlaylistCell.swift */; };
 		E4E82E6725D2DA8E00CBC55A /* Playlists.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4E82E6625D2DA8E00CBC55A /* Playlists.plist */; };
 		E4E82E6A25D2DDA400CBC55A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E82E6925D2DDA400CBC55A /* DataSource.swift */; };
@@ -30,6 +31,7 @@
 		E4339E6125CD75BA00340713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4339E6425CD75BA00340713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4339E6625CD75BA00340713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49D19C725D3D6180023CC0C /* PlaylistHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderView.swift; sourceTree = "<group>"; };
 		E4E82E6325D2D5A300CBC55A /* FeaturedPlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistCell.swift; sourceTree = "<group>"; };
 		E4E82E6625D2DA8E00CBC55A /* Playlists.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Playlists.plist; sourceTree = "<group>"; };
 		E4E82E6925D2DDA400CBC55A /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				E4E82E6325D2D5A300CBC55A /* FeaturedPlaylistCell.swift */,
 				E4F5507D25D3703300AD8428 /* CommonPlaylistCell.swift */,
+				E49D19C725D3D6180023CC0C /* PlaylistHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				E4E82E6A25D2DDA400CBC55A /* DataSource.swift in Sources */,
 				E4F5507E25D3703300AD8428 /* CommonPlaylistCell.swift in Sources */,
 				E4E82E6425D2D5A300CBC55A /* FeaturedPlaylistCell.swift in Sources */,
+				E49D19C825D3D6180023CC0C /* PlaylistHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

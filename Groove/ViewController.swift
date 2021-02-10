@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
   enum Section: String, CaseIterable {
     case featuredPlaylists = "Featured Playlists",
          mixtapesForYou = "Mixtapes For You",
@@ -37,57 +37,56 @@ class ViewController: UIViewController {
       case .nowReplay: return UIColor.white.withAlphaComponent(0.3)
       }
     }
-    
-//    var itemFractionalDimension: (CGFloat, CGFloat) {
-//      switch self {
-//      default: return (width: 1.0, height: 1.0)
-//      }
-//    }
-    
-  
   }
   
   @IBOutlet weak var collectionView: UICollectionView!
   private var dataSource: UICollectionViewDiffableDataSource<Section, Playlist>!
   
   override func viewDidLoad() {
-        super.viewDidLoad()
-        setupCollectionView()
-    }
-
+    super.viewDidLoad()
+    setupCollectionView()
+  }
+  
   func setupCollectionView() {
     collectionView.collectionViewLayout = configureLayout()
     configureDataSource()
     configureSnapshot()
   }
-
+  
 }
 
-// MARK: - CollectionView -
+// MARK: - Collection View Layout-
 extension ViewController {
   func configureLayout() -> UICollectionViewLayout {
-    let sectionProvider = { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection in
+    let layout = UICollectionViewCompositionalLayout {
+      (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection in
+      
       let sectionLayoutKind = Section.allCases[sectionIndex]
       
       switch sectionLayoutKind {
-      case .featuredPlaylists: return self.generateFeaturedPlaylistLayout()
-      case .mixtapesForYou, .favoritePlaylists, .playlistsYouMayLike, .djStation: return self.generateCommonPlaylistLayout()
-      default: return self.generateFeaturedPlaylistLayout()
+      case .featuredPlaylists:
+        return self.generateFeaturedPlaylistLayout()
+      case .mixtapesForYou, .favoritePlaylists, .playlistsYouMayLike, .djStation:
+        return self.generateCommonPlaylistLayout()
+      default:
+        return self.generateCommonPlaylistLayout()
       }
     }
-    
-    return UICollectionViewCompositionalLayout(sectionProvider: sectionProvider)
+    return layout
   }
   
   func generateFeaturedPlaylistLayout() -> NSCollectionLayoutSection {
     let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
     let item = NSCollectionLayoutItem(layoutSize: itemSize)
     item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+    
     let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .fractionalHeight(0.33))
     let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+    
     let section = NSCollectionLayoutSection(group: group)
     section.orthogonalScrollingBehavior = .groupPaging
-    section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+    section.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 10, bottom: 10, trailing: 10)
+    
     return section
   }
   
@@ -95,20 +94,30 @@ extension ViewController {
     let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
     let item = NSCollectionLayoutItem(layoutSize: itemSize)
     item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+    
     let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.465), heightDimension: .fractionalHeight(0.33))
     let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+    
     let section = NSCollectionLayoutSection(group: group)
     section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
-    section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+    section.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 10, bottom: 10, trailing: 10)
+    
+    let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(23))
+    let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .topLeading)
+    section.boundarySupplementaryItems = [header]
+    
     return section
   }
-  
+}
+
+// MARK: - Collection View Data Source -
+extension ViewController {
   func configureDataSource() {
     dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView)
     {(
       collectionView: UICollectionView,
-       indexPath: IndexPath,
-       playlist: Playlist
+      indexPath: IndexPath,
+      playlist: Playlist
     ) -> UICollectionViewCell? in
       let sectionType = Section.allCases[indexPath.section]
       
@@ -126,7 +135,7 @@ extension ViewController {
       case .mixtapesForYou, .favoritePlaylists, .playlistsYouMayLike, .djStation:
         guard let commonCell = collectionView.dequeueReusableCell(withReuseIdentifier: CommonPlaylistCell.reuseIdentifier, for: indexPath) as? CommonPlaylistCell else { fatalError("Cannot create new cell")}
         
-        commonCell.title.text = playlist.title
+        commonCell.title.text = sectionType != Section.djStation ? playlist.title : ""
         commonCell.subtitle.text = playlist.subtitle
         commonCell.thumbnail.backgroundColor = Section.allCases[indexPath.section].color
         
@@ -144,10 +153,19 @@ extension ViewController {
       case .nowReplay:
         return nil
       }
+    }
+    
+    dataSource.supplementaryViewProvider = { (collectionView: UICollectionView, kind: String, indexPath: IndexPath) -> UICollectionReusableView? in
+      guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: PlaylistHeaderView.reuseIdentifier, for: indexPath) as? PlaylistHeaderView else { fatalError("Cannot create new supplementary view") }
       
+      headerView.header.text = Section.allCases[indexPath.section].rawValue
+      return headerView
     }
   }
-  
+}
+
+// MARK: - Collection View Snapshot -
+extension ViewController {
   func configureSnapshot() {
     var snapshot = NSDiffableDataSourceSnapshot<Section, Playlist>()
     
