@@ -68,6 +68,8 @@ extension ViewController {
         return self.generateFeaturedPlaylistLayout()
       case .mixtapesForYou, .favoritePlaylists, .playlistsYouMayLike, .djStation:
         return self.generateCommonPlaylistLayout()
+      case .recommendedPlaylists:
+        return self.generateVIBErecommendedPlaylistLayout()
       default:
         return self.generateCommonPlaylistLayout()
       }
@@ -100,6 +102,25 @@ extension ViewController {
     
     let section = NSCollectionLayoutSection(group: group)
     section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
+    section.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 10, bottom: 10, trailing: 10)
+    
+    let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(23))
+    let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .topLeading)
+    section.boundarySupplementaryItems = [header]
+    
+    return section
+  }
+  
+  func generateVIBErecommendedPlaylistLayout() -> NSCollectionLayoutSection {
+    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+    let item = NSCollectionLayoutItem(layoutSize: itemSize)
+    item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+    
+    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.9), heightDimension: .fractionalHeight(0.45))
+    let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+    
+    let section = NSCollectionLayoutSection(group: group)
+    section.orthogonalScrollingBehavior = .groupPagingCentered
     section.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 10, bottom: 10, trailing: 10)
     
     let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(23))
@@ -141,9 +162,18 @@ extension ViewController {
         
         return commonCell
       case .recentlyPlayed:
+        
+        // TODO: Add data to plist because the collection view current crashes because it cannot create new cell when it dequeues the cells in this section
         return nil
       case .recommendedPlaylists:
-        return nil
+        guard let commonCell = collectionView.dequeueReusableCell(withReuseIdentifier: CommonPlaylistCell.reuseIdentifier, for: indexPath) as? CommonPlaylistCell else { fatalError("Cannot create new cell")}
+        
+        commonCell.title.text = sectionType != Section.djStation ? playlist.title : ""
+        commonCell.subtitle.text = playlist.subtitle
+        commonCell.thumbnail.backgroundColor = Section.allCases[indexPath.section].color
+        commonCell.caption.text = playlist.caption ?? ""
+        
+        return commonCell
       case .chillOut:
         return nil
       case .newSongsYouMayLike:

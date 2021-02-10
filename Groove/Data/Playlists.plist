@@ -399,5 +399,108 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>VIBE Recommended Playlists</string>
+		<key>playlists</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>아이돌-릭</string>
+				<key>subtitle</key>
+				<string>VIBE 트렌드</string>
+				<key>caption</key>
+				<string>한층 더 넓어진 음악 스펙트럼을 보여주며, 달콤한 사랑의 맛으로 가득한 새 앨범 &lt;TASTY&gt;로 돌아온 김우석!</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>POP NOW</string>
+				<key>subtitle</key>
+				<string>VIBE 트렌드</string>
+				<key>caption</key>
+				<string>Kehlani의 피처링으로 더 달콤해진 리믹스 싱글 &apos;At My Worst&apos;를 발매한 Pink Sweat$</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>요즘이곡</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>내 플레이리스트에 꼭꼭 숨겨놓고 싶은 흥행 예감 신곡들! 지금 가장 핫하고 트렌디한 곡들을 놓치지 마세요.</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>이달의 노래 2월</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>이승기의 &apos;잘할게&apos;. Olivia Rodrigo의 &apos;drivers license&apos;. VIBE에서 사랑받은 노래들.</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>지붕뚫고 급상승</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>실시간으로 차트 점령 중! 📈 지금 뜨는 노래가 궁금하다면! 인기 급상승 중인 곡들을 만나보세요</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>지금 잠수 중</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>바삐 돌아가는 세상으로부터 도망치고, 나를 찾는 것들로부터 멀어지고 싶을 때. 꼬르륵~ 지금 잠수 중. 🥽</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>따스한 겨울을 보내는 방법</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>하루 종일 틀어두기 좋은 따스하고 나른한 분위기의 Lo-fi 사운드와 함께 편안하고 느긋한 하루를 즐겨보세요.</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>벽난로 앞에서 책 읽을 때</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>비록 집에 벽난로는 없지만. 타닥타닥- 소리 내는 벽난로 앞에서 코코아 한잔하며 책 읽고 싶을 때. 📚</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>귤 까먹으면서 뒹굴뒹굴</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>상큼하고 달콤한 음악과 함께! 따닷한 전기장판 위에 이불 덮고 누워 귤 까먹으면서 뒹굴뒹굴 시간 보내기. 🍊</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>역시 이불 밖은 위험해</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>편안한 옷차림으로 따듯한 이불 속에서. 하루 종일 빈둥빈둥 느긋한 시간을 보낼 때 곁들이기 좋은 플레이리스트!</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>뜻밖의 만남</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>쏟아지는 신곡의 홍수 속에서 새로운 노래를 발견하는 즐거움! 새로운 음악과 신선한 아티스드를 만나보세요.</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>VIBE 노래방 반주 모음집</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>노래를 재생하고 마이크 아이콘을 누르면 방구석 노래방 오픈! 싱크 가사에 맞춰 신나게 불러보세요. 🎤</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>

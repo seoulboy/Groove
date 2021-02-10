@@ -11,6 +11,7 @@ class Playlist: Decodable {
   let theme: String?
   let title: String
   let subtitle: String?
+  let caption: String?
   let identifier = UUID().uuidString
 }
 

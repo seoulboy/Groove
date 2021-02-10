@@ -12,4 +12,6 @@ class CommonPlaylistCell: UICollectionViewCell {
   @IBOutlet weak var title: UILabel!
   @IBOutlet weak var subtitle: UILabel!
   @IBOutlet weak var thumbnail: UIView!
+  @IBOutlet weak var caption: UILabel!
+  
 }

@@ -92,7 +92,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eL7-Jy-GgS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="184" height="254"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="184" height="279.5"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekA-wN-2ZD" userLabel="thumbnail">
                                                             <rect key="frame" x="0.0" y="0.0" width="184" height="184"/>
@@ -111,6 +111,12 @@
                                                             <rect key="frame" x="0.0" y="213.5" width="184" height="40.5"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                             <color key="textColor" systemColor="systemGray2Color"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zU-wI-BFo" userLabel="caption">
+                                                            <rect key="frame" x="0.0" y="259" width="85.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -132,6 +138,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="184" height="244"/>
                                         <connections>
+                                            <outlet property="caption" destination="4zU-wI-BFo" id="NqT-nM-M08"/>
                                             <outlet property="subtitle" destination="Kzr-sA-Ma0" id="CfP-5X-0AE"/>
                                             <outlet property="thumbnail" destination="ekA-wN-2ZD" id="LfM-La-cIx"/>
                                             <outlet property="title" destination="4aG-Rg-E67" id="Gbi-qz-Heh"/>
@@ -142,17 +149,25 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mixtapes For You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMw-VJ-dGW" userLabel="header">
-                                            <rect key="frame" x="8" y="13" width="398" height="24"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Mixtapes For You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMw-VJ-dGW" userLabel="header">
+                                            <rect key="frame" x="8" y="13" width="165.5" height="24"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7h9-yL-Ffj">
+                                            <rect key="frame" x="370" y="10" width="36" height="30"/>
+                                            <state key="normal" title="More">
+                                                <color key="titleColor" systemColor="systemGray2Color"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="mMw-VJ-dGW" secondAttribute="trailing" id="8de-Pp-iIc"/>
+                                        <constraint firstItem="7h9-yL-Ffj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mMw-VJ-dGW" secondAttribute="trailing" constant="8" symbolic="YES" id="6cs-Fk-HNO"/>
                                         <constraint firstItem="mMw-VJ-dGW" firstAttribute="centerY" secondItem="Qh8-NR-JIy" secondAttribute="centerY" id="D0q-05-Aha"/>
+                                        <constraint firstItem="7h9-yL-Ffj" firstAttribute="centerY" secondItem="Qh8-NR-JIy" secondAttribute="centerY" id="MHg-Vv-og8"/>
                                         <constraint firstItem="mMw-VJ-dGW" firstAttribute="leading" secondItem="Qh8-NR-JIy" secondAttribute="leadingMargin" id="cfr-SK-OdS"/>
+                                        <constraint firstItem="7h9-yL-Ffj" firstAttribute="trailing" secondItem="Qh8-NR-JIy" secondAttribute="trailingMargin" id="swx-qo-n9h"/>
                                     </constraints>
                                     <connections>
                                         <outlet property="header" destination="mMw-VJ-dGW" id="6Qz-3v-w7M"/>
