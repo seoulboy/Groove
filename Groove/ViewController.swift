@@ -48,6 +48,7 @@ class ViewController: UIViewController {
   }
   
   func setupCollectionView() {
+    collectionView.showsVerticalScrollIndicator = false
     collectionView.collectionViewLayout = configureLayout()
     configureDataSource()
     configureSnapshot()
@@ -60,49 +61,90 @@ extension ViewController {
   func configureLayout() -> UICollectionViewLayout {
     let layout = UICollectionViewCompositionalLayout {
       (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection in
-      
+
       let sectionLayoutKind = Section.allCases[sectionIndex]
       
       switch sectionLayoutKind {
       case .featuredPlaylists:
         return self.generateFeaturedPlaylistLayout()
-      case .mixtapesForYou, .favoritePlaylists, .playlistsYouMayLike, .djStation:
-        return self.generateCommonPlaylistLayout()
+      case .mixtapesForYou, .favoritePlaylists, .playlistsYouMayLike:
+        return self.generateCommonPlaylistLayout(section: sectionLayoutKind)
+      case .djStation:
+        return self.generateDJStationLayout()
+      case .recentlyPlayed, .newSongsYouMayLike:
+        return self.generateTracksLayout()
       case .recommendedPlaylists:
         return self.generateVIBErecommendedPlaylistLayout()
       default:
-        return self.generateCommonPlaylistLayout()
+        return self.generateDJStationLayout()
       }
     }
+    
+    let layoutConfiguration = UICollectionViewCompositionalLayoutConfiguration()
+    layoutConfiguration.interSectionSpacing = 40
+    layout.configuration = layoutConfiguration
+    
     return layout
   }
   
   func generateFeaturedPlaylistLayout() -> NSCollectionLayoutSection {
     let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
     let item = NSCollectionLayoutItem(layoutSize: itemSize)
-    item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+    item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 6, bottom: 10, trailing: 6)
     
-    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .fractionalHeight(0.33))
+    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.96), heightDimension: .fractionalHeight(0.33))
     let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
     
     let section = NSCollectionLayoutSection(group: group)
     section.orthogonalScrollingBehavior = .groupPaging
-    section.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 10, bottom: 10, trailing: 10)
+    section.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 0, bottom: 10, trailing: 12)
     
     return section
   }
   
-  func generateCommonPlaylistLayout() -> NSCollectionLayoutSection {
+  func generateCommonPlaylistLayout(section: Section) -> NSCollectionLayoutSection {
+    var groupHeightDimension: NSCollectionLayoutDimension {
+      switch section {
+      case .mixtapesForYou:
+        return .fractionalHeight(0.33)
+      case .favoritePlaylists, .playlistsYouMayLike:
+        return .fractionalHeight(0.3)
+      default:
+        return .fractionalHeight(0.1)
+      }
+    }
+    
     let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
     let item = NSCollectionLayoutItem(layoutSize: itemSize)
-    item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+    item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 8, bottom: 10, trailing: 4)
     
-    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.465), heightDimension: .fractionalHeight(0.33))
+    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.48), heightDimension: groupHeightDimension)
+//    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.48), heightDimension: .estimated(250))
     let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
     
     let section = NSCollectionLayoutSection(group: group)
     section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
-    section.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 10, bottom: 10, trailing: 10)
+    section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 12)
+    
+    let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(23))
+    let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .topLeading)
+    section.boundarySupplementaryItems = [header]
+    
+    return section
+  }
+  
+  func generateDJStationLayout() -> NSCollectionLayoutSection {
+    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+    let item = NSCollectionLayoutItem(layoutSize: itemSize)
+    item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 8, bottom: 0, trailing: 4)
+    
+    let groupDimension = NSCollectionLayoutDimension.fractionalWidth(0.48)
+    let groupSize = NSCollectionLayoutSize(widthDimension: groupDimension, heightDimension: groupDimension)
+    let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+    
+    let section = NSCollectionLayoutSection(group: group)
+    section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
+    section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 12)
     
     let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(23))
     let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .topLeading)
@@ -114,14 +156,33 @@ extension ViewController {
   func generateVIBErecommendedPlaylistLayout() -> NSCollectionLayoutSection {
     let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
     let item = NSCollectionLayoutItem(layoutSize: itemSize)
-    item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+    item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 6, bottom: 10, trailing: 6)
     
-    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.9), heightDimension: .fractionalHeight(0.45))
+    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.927), heightDimension: .fractionalHeight(0.6))
     let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
     
     let section = NSCollectionLayoutSection(group: group)
     section.orthogonalScrollingBehavior = .groupPagingCentered
-    section.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 10, bottom: 10, trailing: 10)
+    section.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 0, bottom: 0, trailing: 12)
+    
+    let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(23))
+    let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .topLeading)
+    section.boundarySupplementaryItems = [header]
+    
+    return section
+  }
+  
+  func generateTracksLayout() -> NSCollectionLayoutSection {
+    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.2))
+    let item = NSCollectionLayoutItem(layoutSize: itemSize)
+    item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 8, bottom: 10, trailing: 4)
+    
+    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.96), heightDimension: .fractionalHeight(0.4))
+    let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
+    
+    let section = NSCollectionLayoutSection(group: group)
+    section.orthogonalScrollingBehavior = .paging
+    section.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 0, bottom: 0, trailing: 12)
     
     let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(23))
     let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .topLeading)
@@ -161,19 +222,26 @@ extension ViewController {
         commonCell.thumbnail.backgroundColor = Section.allCases[indexPath.section].color
         
         return commonCell
-      case .recentlyPlayed:
         
-        // TODO: Add data to plist because the collection view current crashes because it cannot create new cell when it dequeues the cells in this section
-        return nil
+      case .recentlyPlayed:
+        guard let trackCell = collectionView.dequeueReusableCell(withReuseIdentifier: TrackCell.reuseIdentifier, for: indexPath) as? TrackCell, let track = playlist.tracks?[indexPath.item] else { fatalError("Cannot create new cell") }
+        
+        trackCell.title.text = track.title
+        trackCell.artist.text = track.artists.joined(separator: ", ")
+        trackCell.thumbnail.backgroundColor = Section.allCases[indexPath.section].color
+        
+        return trackCell
+        
       case .recommendedPlaylists:
         guard let commonCell = collectionView.dequeueReusableCell(withReuseIdentifier: CommonPlaylistCell.reuseIdentifier, for: indexPath) as? CommonPlaylistCell else { fatalError("Cannot create new cell")}
         
-        commonCell.title.text = sectionType != Section.djStation ? playlist.title : ""
+        commonCell.title.text = playlist.title
         commonCell.subtitle.text = playlist.subtitle
         commonCell.thumbnail.backgroundColor = Section.allCases[indexPath.section].color
-        commonCell.caption.text = playlist.caption ?? ""
+        commonCell.caption.text = playlist.caption
         
         return commonCell
+        
       case .chillOut:
         return nil
       case .newSongsYouMayLike:

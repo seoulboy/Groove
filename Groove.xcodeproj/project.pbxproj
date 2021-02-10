@@ -14,6 +14,8 @@
 		E4339E6225CD75BA00340713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4339E6125CD75BA00340713 /* Assets.xcassets */; };
 		E4339E6525CD75BA00340713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4339E6325CD75BA00340713 /* LaunchScreen.storyboard */; };
 		E49D19C825D3D6180023CC0C /* PlaylistHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D19C725D3D6180023CC0C /* PlaylistHeaderView.swift */; };
+		E49D19CB25D409540023CC0C /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D19CA25D409540023CC0C /* Track.swift */; };
+		E49D19CE25D416A60023CC0C /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D19CD25D416A60023CC0C /* TrackCell.swift */; };
 		E4E82E6425D2D5A300CBC55A /* FeaturedPlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E82E6325D2D5A300CBC55A /* FeaturedPlaylistCell.swift */; };
 		E4E82E6725D2DA8E00CBC55A /* Playlists.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4E82E6625D2DA8E00CBC55A /* Playlists.plist */; };
 		E4E82E6A25D2DDA400CBC55A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E82E6925D2DDA400CBC55A /* DataSource.swift */; };
@@ -32,6 +34,8 @@
 		E4339E6425CD75BA00340713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4339E6625CD75BA00340713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E49D19C725D3D6180023CC0C /* PlaylistHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderView.swift; sourceTree = "<group>"; };
+		E49D19CA25D409540023CC0C /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		E49D19CD25D416A60023CC0C /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		E4E82E6325D2D5A300CBC55A /* FeaturedPlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistCell.swift; sourceTree = "<group>"; };
 		E4E82E6625D2DA8E00CBC55A /* Playlists.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Playlists.plist; sourceTree = "<group>"; };
 		E4E82E6925D2DDA400CBC55A /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			children = (
 				E4E82E6C25D2DE6F00CBC55A /* PlaylistCollection.swift */,
 				E4E82E6F25D2DED600CBC55A /* Playlist.swift */,
+				E49D19CA25D409540023CC0C /* Track.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 				E4E82E6325D2D5A300CBC55A /* FeaturedPlaylistCell.swift */,
 				E4F5507D25D3703300AD8428 /* CommonPlaylistCell.swift */,
 				E49D19C725D3D6180023CC0C /* PlaylistHeaderView.swift */,
+				E49D19CD25D416A60023CC0C /* TrackCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,9 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4339E5D25CD75B900340713 /* ViewController.swift in Sources */,
+				E49D19CB25D409540023CC0C /* Track.swift in Sources */,
 				E4339E5925CD75B900340713 /* AppDelegate.swift in Sources */,
 				E4339E5B25CD75B900340713 /* SceneDelegate.swift in Sources */,
 				E4E82E7025D2DED600CBC55A /* Playlist.swift in Sources */,
+				E49D19CE25D416A60023CC0C /* TrackCell.swift in Sources */,
 				E4E82E6D25D2DE6F00CBC55A /* PlaylistCollection.swift in Sources */,
 				E4E82E6A25D2DDA400CBC55A /* DataSource.swift in Sources */,
 				E4F5507E25D3703300AD8428 /* CommonPlaylistCell.swift in Sources */,

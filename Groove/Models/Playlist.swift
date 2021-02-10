@@ -7,11 +7,12 @@
 
 import Foundation
 
-class Playlist: Decodable {
+struct Playlist: Decodable {
   let theme: String?
-  let title: String
+  let title: String?
   let subtitle: String?
   let caption: String?
+  let tracks: [Track]?
   let identifier = UUID().uuidString
 }
 

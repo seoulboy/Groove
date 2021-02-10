@@ -401,6 +401,146 @@
 	</dict>
 	<dict>
 		<key>title</key>
+		<string>Recently Played</string>
+		<key>playlists</key>
+		<array>
+			<dict>
+				<key>tracks</key>
+				<array>
+					<dict>
+						<key>title</key>
+						<string>Generation Why</string>
+						<key>artists</key>
+						<array>
+							<string>Conan Gray</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>2 Soon</string>
+						<key>artists</key>
+						<array>
+							<string>keshi</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Everything(Feat. John Legend)</string>
+						<key>artists</key>
+						<array>
+							<string>Ella Mai</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>아무도 모르는 노래</string>
+						<key>artists</key>
+						<array>
+							<string>Colde(콜드)</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Do U Dirty</string>
+						<key>artists</key>
+						<array>
+							<string>Kehlani</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Time</string>
+						<key>artists</key>
+						<array>
+							<string>AUDREY NUNA</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Like Strangers Do</string>
+						<key>artists</key>
+						<array>
+							<string>AJ Mitchell</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>drunk</string>
+						<key>artists</key>
+						<array>
+							<string>keshi</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>She likes Spring, I Prefer Winter</string>
+						<key>artists</key>
+						<array>
+							<string>slchld</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Elastic Heart</string>
+						<key>artists</key>
+						<array>
+							<string>Sia</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Face To Face</string>
+						<key>artists</key>
+						<array>
+							<string>Ruel</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Glitter</string>
+						<key>artists</key>
+						<array>
+							<string>BENEE</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>hello!</string>
+						<key>artists</key>
+						<array>
+							<string>ROLE MODEL</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Good News</string>
+						<key>artists</key>
+						<array>
+							<string>MAC MILLER</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Sweet Coffee (feat. Bassette)</string>
+						<key>artists</key>
+						<array>
+							<string>Mullally, Bassette</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>34+35</string>
+						<key>artists</key>
+						<array>
+							<string>Ariana Grande</string>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>VIBE Recommended Playlists</string>
 		<key>playlists</key>
 		<array>

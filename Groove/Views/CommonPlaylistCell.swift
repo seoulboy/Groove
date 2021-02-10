@@ -14,4 +14,14 @@ class CommonPlaylistCell: UICollectionViewCell {
   @IBOutlet weak var thumbnail: UIView!
   @IBOutlet weak var caption: UILabel!
   
+  override func prepareForReuse() {
+    super.prepareForReuse()
+//    resetCellProperties()
+  }
+  
+  private func resetCellProperties() {
+    title.text = ""
+    subtitle.text = ""
+    caption.text = ""
+  }
 }
