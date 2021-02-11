@@ -425,7 +425,7 @@
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Everything(Feat. John Legend)</string>
+						<string>Everything (Feat. John Legend)</string>
 						<key>artists</key>
 						<array>
 							<string>Ella Mai</string>
@@ -533,6 +533,38 @@
 						<key>artists</key>
 						<array>
 							<string>Ariana Grande</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>사는게 도전</string>
+						<key>artists</key>
+						<array>
+							<string>릴보이, 미란이</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>야간비행</string>
+						<key>artists</key>
+						<array>
+							<string>MC Sniper, Rachel Yamagata</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Sukidara</string>
+						<key>artists</key>
+						<array>
+							<string>UMI</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Say so</string>
+						<key>artists</key>
+						<array>
+							<string>Doja Cat</string>
 						</array>
 					</dict>
 				</array>

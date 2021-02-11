@@ -15,16 +15,16 @@ class DataSource {
   private let decoder = PropertyListDecoder()
   
   private init() {
-    guard let url = Bundle.main.url(forResource: "Playlists", withExtension: "plist"),
-          let data = try? Data(contentsOf: url) else {
+    guard let url = Bundle.main.url(forResource: "Playlists", withExtension: "plist") else {
       self.playlists = []
       return
     }
-    print(data)
+    
     do {
-      let playlists = try decoder.decode([PlaylistCollection].self, from: data)
-      self.playlists = playlists
-      return
+      if let data = try? Data(contentsOf: url) {
+        self.playlists = try decoder.decode([PlaylistCollection].self, from: data)
+        return
+      }
     } catch {
       print(error)
     }
