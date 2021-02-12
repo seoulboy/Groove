@@ -4,6 +4,12 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>#내돈내듣 VIBE</string>
+		<key>playlists</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>featured</string>
 		<key>playlists</key>
 		<array>
@@ -671,6 +677,374 @@
 				<string>VIBE</string>
 				<key>caption</key>
 				<string>노래를 재생하고 마이크 아이콘을 누르면 방구석 노래방 오픈! 싱크 가사에 맞춰 신나게 불러보세요. 🎤</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Holiday Morning</string>
+		<key>playlists</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>편안한 클래식</string>
+				<key>subtitle</key>
+				<string>VIBE 클래식</string>
+				<key>caption</key>
+				<string>마음에 안정을 주는 차분한 클래식 선율. 우아하고 아름다운 클래식 음악과 연휴 아침을 즐겨보세요.</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>편안한 멜로딕 팝</string>
+				<key>subtitle</key>
+				<string>VIBE Pop</string>
+				<key>caption</key>
+				<string>부드러운 멜로디와 감미로운 보컬. 부담 없이 듣기 좋은 소프트 팝과 함께하는 아침. 여유로운 연휴를 위한 사운드.</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>카페 분위기의 포크</string>
+				<key>subtitle</key>
+				<string>VIBE 해외 포크/어쿠스틱</string>
+				<key>caption</key>
+				<string>잔잔하고 부드러운 어쿠스틱 선율이 선사하는 편안한 시간. 따듯한 커피도 한 잔 곁들인다면 더할 나위 없겠죠.</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>뽀송뽀송 ☀️</string>
+				<key>subtitle</key>
+				<string>VIBE 뉴에이지/연주곡</string>
+				<key>caption</key>
+				<string>부지런하게 시작하는 아침에 듣기 좋은 잔잔하고 느긋한 연주곡. 아름다운 선율에 마음까지 뽀송뽀송해질 거에요.</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>칠아웃 일렉트로닉</string>
+				<key>subtitle</key>
+				<string>VIBE 해외 일렉트로닉</string>
+				<key>caption</key>
+				<string>나른하고 몽롱한 사운드의 향연. 아무 고민 없이 하루 종일 틀어두고 싶은 감각적인 멜로디에 푹 빠져보세요.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>New Songs You May Like</string>
+		<key>playlists</key>
+		<array>
+			<dict>
+				<key>tracks</key>
+				<array>
+					<dict>
+						<key>title</key>
+						<string>Generation Why</string>
+						<key>artists</key>
+						<array>
+							<string>Conan Gray</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>2 Soon</string>
+						<key>artists</key>
+						<array>
+							<string>keshi</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Everything (Feat. John Legend)</string>
+						<key>artists</key>
+						<array>
+							<string>Ella Mai</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>아무도 모르는 노래</string>
+						<key>artists</key>
+						<array>
+							<string>Colde(콜드)</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Do U Dirty</string>
+						<key>artists</key>
+						<array>
+							<string>Kehlani</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Time</string>
+						<key>artists</key>
+						<array>
+							<string>AUDREY NUNA</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Like Strangers Do</string>
+						<key>artists</key>
+						<array>
+							<string>AJ Mitchell</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>drunk</string>
+						<key>artists</key>
+						<array>
+							<string>keshi</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>She likes Spring, I Prefer Winter</string>
+						<key>artists</key>
+						<array>
+							<string>slchld</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Elastic Heart</string>
+						<key>artists</key>
+						<array>
+							<string>Sia</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Face To Face</string>
+						<key>artists</key>
+						<array>
+							<string>Ruel</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Glitter</string>
+						<key>artists</key>
+						<array>
+							<string>BENEE</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>hello!</string>
+						<key>artists</key>
+						<array>
+							<string>ROLE MODEL</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Good News</string>
+						<key>artists</key>
+						<array>
+							<string>MAC MILLER</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Sweet Coffee (feat. Bassette)</string>
+						<key>artists</key>
+						<array>
+							<string>Mullally, Bassette</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>34+35</string>
+						<key>artists</key>
+						<array>
+							<string>Ariana Grande</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>사는게 도전</string>
+						<key>artists</key>
+						<array>
+							<string>릴보이, 미란이</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>야간비행</string>
+						<key>artists</key>
+						<array>
+							<string>MC Sniper, Rachel Yamagata</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Sukidara</string>
+						<key>artists</key>
+						<array>
+							<string>UMI</string>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Say so</string>
+						<key>artists</key>
+						<array>
+							<string>Doja Cat</string>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Magazine</string>
+		<key>playlists</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>아이돌-릭</string>
+				<key>subtitle</key>
+				<string>VIBE 트렌드</string>
+				<key>caption</key>
+				<string>한층 더 넓어진 음악 스펙트럼을 보여주며, 달콤한 사랑의 맛으로 가득한 새 앨범 &lt;TASTY&gt;로 돌아온 김우석!</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>POP NOW</string>
+				<key>subtitle</key>
+				<string>VIBE 트렌드</string>
+				<key>caption</key>
+				<string>Kehlani의 피처링으로 더 달콤해진 리믹스 싱글 &apos;At My Worst&apos;를 발매한 Pink Sweat$</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>요즘이곡</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>내 플레이리스트에 꼭꼭 숨겨놓고 싶은 흥행 예감 신곡들! 지금 가장 핫하고 트렌디한 곡들을 놓치지 마세요.</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>이달의 노래 2월</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>이승기의 &apos;잘할게&apos;. Olivia Rodrigo의 &apos;drivers license&apos;. VIBE에서 사랑받은 노래들.</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>지붕뚫고 급상승</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>실시간으로 차트 점령 중! 📈 지금 뜨는 노래가 궁금하다면! 인기 급상승 중인 곡들을 만나보세요</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>지금 잠수 중</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>바삐 돌아가는 세상으로부터 도망치고, 나를 찾는 것들로부터 멀어지고 싶을 때. 꼬르륵~ 지금 잠수 중. 🥽</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>따스한 겨울을 보내는 방법</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>하루 종일 틀어두기 좋은 따스하고 나른한 분위기의 Lo-fi 사운드와 함께 편안하고 느긋한 하루를 즐겨보세요.</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>벽난로 앞에서 책 읽을 때</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>비록 집에 벽난로는 없지만. 타닥타닥- 소리 내는 벽난로 앞에서 코코아 한잔하며 책 읽고 싶을 때. 📚</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>귤 까먹으면서 뒹굴뒹굴</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>상큼하고 달콤한 음악과 함께! 따닷한 전기장판 위에 이불 덮고 누워 귤 까먹으면서 뒹굴뒹굴 시간 보내기. 🍊</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>역시 이불 밖은 위험해</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>편안한 옷차림으로 따듯한 이불 속에서. 하루 종일 빈둥빈둥 느긋한 시간을 보낼 때 곁들이기 좋은 플레이리스트!</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>뜻밖의 만남</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>쏟아지는 신곡의 홍수 속에서 새로운 노래를 발견하는 즐거움! 새로운 음악과 신선한 아티스드를 만나보세요.</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>VIBE 노래방 반주 모음집</string>
+				<key>subtitle</key>
+				<string>VIBE</string>
+				<key>caption</key>
+				<string>노래를 재생하고 마이크 아이콘을 누르면 방구석 노래방 오픈! 싱크 가사에 맞춰 신나게 불러보세요. 🎤</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Replay</string>
+		<key>playlists</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>숲에 불 켜졌다
+오늘모임은 고민회 오늘 모임은 고민회</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>미친 텐션
+쉴틈없는 수다 폭탄 w.유키스</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>오늘은 찐으로 누워서 이불킥킥킥!! 오늘은 찐으로 누워서 이불킥킥킥!!</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>생방 보쇼!
+더 신나게 개편된 누리끼리 생방 보쇼!</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>오왠의 신곡
+&apos;난 당신의 고요함이&apos; 비하인드 스토리 비하인드 스토리</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>쌔굿바..
+마지막 항마랜드 늦지 않게 탑승 마지막 항마랜드 늦지 않게 탑승</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>오늘 꼰데라떼엔
+샷 하나 추가할게요! 샷 하나 추가할게요!</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>어? 스며들었다
+날 설레게한 모든 것 점심어택 날 설레게 한 모든 것</string>
 			</dict>
 		</array>
 	</dict>
