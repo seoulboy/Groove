@@ -16,6 +16,8 @@
 		E49D19C825D3D6180023CC0C /* PlaylistHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D19C725D3D6180023CC0C /* PlaylistHeaderView.swift */; };
 		E49D19CB25D409540023CC0C /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D19CA25D409540023CC0C /* Track.swift */; };
 		E49D19CE25D416A60023CC0C /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D19CD25D416A60023CC0C /* TrackCell.swift */; };
+		E49D19D725D607020023CC0C /* ReplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D19D625D607020023CC0C /* ReplayCell.swift */; };
+		E49D19DA25D63C9C0023CC0C /* TopSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49D19D925D63C9C0023CC0C /* TopSectionHeaderView.swift */; };
 		E4E82E6425D2D5A300CBC55A /* FeaturedPlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E82E6325D2D5A300CBC55A /* FeaturedPlaylistCell.swift */; };
 		E4E82E6725D2DA8E00CBC55A /* Playlists.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4E82E6625D2DA8E00CBC55A /* Playlists.plist */; };
 		E4E82E6A25D2DDA400CBC55A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E82E6925D2DDA400CBC55A /* DataSource.swift */; };
@@ -36,6 +38,8 @@
 		E49D19C725D3D6180023CC0C /* PlaylistHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderView.swift; sourceTree = "<group>"; };
 		E49D19CA25D409540023CC0C /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		E49D19CD25D416A60023CC0C /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		E49D19D625D607020023CC0C /* ReplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayCell.swift; sourceTree = "<group>"; };
+		E49D19D925D63C9C0023CC0C /* TopSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSectionHeaderView.swift; sourceTree = "<group>"; };
 		E4E82E6325D2D5A300CBC55A /* FeaturedPlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistCell.swift; sourceTree = "<group>"; };
 		E4E82E6625D2DA8E00CBC55A /* Playlists.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Playlists.plist; sourceTree = "<group>"; };
 		E4E82E6925D2DDA400CBC55A /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				E4F5507D25D3703300AD8428 /* CommonPlaylistCell.swift */,
 				E49D19C725D3D6180023CC0C /* PlaylistHeaderView.swift */,
 				E49D19CD25D416A60023CC0C /* TrackCell.swift */,
+				E49D19D625D607020023CC0C /* ReplayCell.swift */,
+				E49D19D925D63C9C0023CC0C /* TopSectionHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,8 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49D19D725D607020023CC0C /* ReplayCell.swift in Sources */,
 				E4339E5D25CD75B900340713 /* ViewController.swift in Sources */,
 				E49D19CB25D409540023CC0C /* Track.swift in Sources */,
+				E49D19DA25D63C9C0023CC0C /* TopSectionHeaderView.swift in Sources */,
 				E4339E5925CD75B900340713 /* AppDelegate.swift in Sources */,
 				E4339E5B25CD75B900340713 /* SceneDelegate.swift in Sources */,
 				E4E82E7025D2DED600CBC55A /* Playlist.swift in Sources */,
