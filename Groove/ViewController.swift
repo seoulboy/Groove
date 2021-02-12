@@ -61,7 +61,7 @@ extension ViewController {
     }
     
     let layoutConfiguration = UICollectionViewCompositionalLayoutConfiguration()
-    layoutConfiguration.interSectionSpacing = 30
+    layoutConfiguration.interSectionSpacing = 40
     layout.configuration = layoutConfiguration
     
     return layout
@@ -94,7 +94,7 @@ extension ViewController {
     let groupWidthDimension = NSCollectionLayoutDimension.absolute(groupWidth / visibleGroupCount)
     let sectionSideInset = (layoutEnvironment.container.contentSize.width - groupWidth) / 2
     let sectionContentInsets = NSDirectionalEdgeInsets(top: 12, leading: sectionSideInset, bottom: 0, trailing: sectionSideInset)
-    let topSectionContentInsets = NSDirectionalEdgeInsets(top: 0, leading: sectionSideInset, bottom: -45, trailing: sectionSideInset)
+    let topSectionContentInsets = NSDirectionalEdgeInsets(top: 0, leading: sectionSideInset, bottom: -60, trailing: sectionSideInset)
     
     let layoutSection: NSCollectionLayoutSection
     switch sectionType {
@@ -132,7 +132,7 @@ extension ViewController {
     let item = NSCollectionLayoutItem(layoutSize: itemSize)
     item.contentInsets = itemContentInsets
     
-    let groupSize = NSCollectionLayoutSize(widthDimension: groupWidthDimension, heightDimension: .fractionalHeight(0.33))
+    let groupSize = NSCollectionLayoutSize(widthDimension: groupWidthDimension, heightDimension: .fractionalHeight(0.35))
     let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
     
     let section = NSCollectionLayoutSection(group: group)
